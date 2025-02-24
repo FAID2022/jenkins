@@ -9,12 +9,12 @@ pipeline {
 
     stage('Test') {
       steps {
-        script {
+        
 
 
           // Run Maven on a Unix agent.
           sh "mvn test"
-        }
+        
 
       }
     }
