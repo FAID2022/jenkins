@@ -24,7 +24,10 @@ pipeline {
         stage('Test') {
             steps {
        
-
+                for(int i=0;i<10;i++){
+                    echo "${i+1}"
+                    sleep 1
+                }
                 // Run Maven on a Unix agent.
                 sh "mvn test"
 
