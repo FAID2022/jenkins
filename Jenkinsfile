@@ -28,10 +28,10 @@ pipeline {
                         echo "${i + 1}"
                         sleep 1
                     }
-                }
+                
                 // Run Maven on a Unix agent.
                 sh "mvn test"
-
+                    }
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
