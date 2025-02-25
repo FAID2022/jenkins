@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh "echo BRANCH ${BRANCH} AND SLEEP ${SLEEP_TIME} "
         sh 'mvn clean package -DskipTests=true'
       }
     }
